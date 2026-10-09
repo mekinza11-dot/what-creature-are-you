@@ -1,0 +1,56 @@
+
+<div class="game">
+  <header>
+    <h1>✨ What Creature Are You? ✨</h1>
+    <p>Discover your magical side!</p>
+    <nav>
+      <button id="homeBtn">🏠 Home</button>
+      <button id="collectionBtn">📚 Collection (<span id="collectionCount">0</span>)</button>
+    </nav>
+  </header>
+
+  <section id="homeScreen" class="screen">
+    <div class="big-emoji">🦄</div>
+    <h2>Meet Your Inner Creature</h2>
+    <p>Answer 6 fun questions to discover a creature with your own magical personality.</p>
+    <button id="startBtn" class="primary">Discover My Creature ✨</button>
+  </section>
+
+  <section id="quizScreen" class="screen hidden">
+    <div class="progress-info">
+      <span id="progressText">Question 1 of 6</span>
+      <span id="progressPercent">17%</span>
+    </div>
+    <div class="progress-track">
+      <div id="progressBar"></div>
+    </div>
+    <h2 id="questionText">Choose your answer</h2>
+    <div id="answers" class="answers"></div>
+    <button id="nextBtn" class="primary" disabled>Next ➜</button>
+  </section>
+
+  <section id="resultScreen" class="screen hidden">
+    <p>You discovered...</p>
+    <div id="resultEmoji" class="big-emoji">🦊</div>
+    <p id="resultRarity" class="rarity"></p>
+    <h2 id="resultName">Moon Fox</h2>
+    <p id="resultDescription"></p>
+    <div class="power-box">
+      <strong>⚡ Special Power</strong>
+      <p id="resultPower"></p>
+    </div>
+    <p id="resultMessage"></p>
+    <button id="againBtn" class="primary">🔄 Try Again</button>
+    <button id="viewCollectionBtn">📚 My Collection</button>
+  </section>
+
+  <section id="collectionScreen" class="screen hidden">
+    <h2>📚 Your Creature Collection</h2>
+    <p>Your discoveries are saved in this browser.</p>
+    <div id="collectionGrid" class="collection-grid"></div>
+    <button id="backBtn" class="primary">← Back Home</button>
+    <button id="clearCollectionBtn" class="danger">Clear Collection</button>
+  </section>
+
+  <footer>Made with 💜 and a little magic</footer>
+</div>
